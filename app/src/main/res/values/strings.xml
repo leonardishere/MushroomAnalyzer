@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mushroom Analyzer</string>
+
+    <!-- landing page buttons -->
+    <string name="button1">Analyze Mushroom</string>
+    <string name="button2">Help</string>
+    <string name="button3">About</string>
+    <string name="button4">Legal</string>
+
+    <string name="nothing">Nothing to see here. Yet.</string>
+    <string name="empty"></string>
+    <string name="contentDescription1">A picture of a mushroom.</string>
+    <string name="warning">Caution!\n\nNever eat mushrooms that have been identified with this app.\n\nThe consumption of mushrooms always happens at your own risk.\n\nThe app can not replace the advice of an experienced professional. It provides only basic knowledge to simplify the mushroom identification. The data is based on the actual state of knowledge and professional experience. However we can not give any guarentee for the correctness of the edibility-values.\n\nContinue if you agree with these conditions.\n</string>
+    <!--<string name=""></string>-->
+</resources>
