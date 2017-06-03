@@ -13,7 +13,7 @@ public class DebugActivity extends AppCompatActivity {
         setContentView(R.layout.activity_debug);
 
         Intent intent = getIntent();
-        String str = intent.getStringExtra("debug_text");
+        String str = intent.getStringExtra(getString(R.string.debug));
         TextView view = (TextView) findViewById(R.id.debugTextview);
         view.setText(str);
     }

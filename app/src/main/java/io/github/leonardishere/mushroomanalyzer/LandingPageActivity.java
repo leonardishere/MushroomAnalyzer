@@ -23,22 +23,20 @@ public class LandingPageActivity extends AppCompatActivity {
 
     public void button2(View view){
         Intent intent = new Intent(this, DebugActivity.class);
-        intent.putExtra("debug_text", "button2 was clicked");
+        intent.putExtra(getString(R.string.debug), "button2 was clicked");
         startActivity(intent);
     }
 
     public void button3(View view){
         Intent intent = new Intent(this, DebugActivity.class);
-        intent.putExtra("debug_text", "button3 was clicked");
+        intent.putExtra(getString(R.string.debug), "button3 was clicked");
         startActivity(intent);
     }
 
     public void button4(View view){
         Intent intent = new Intent(this, DebugActivity.class);
         //intent.putExtra("debug_text", "button4 was clicked");
-        intent.putExtra("debug_text", getString(R.string.warning));
-        //String str = R.string.warning;
-        //getString(R.string.warning);
+        intent.putExtra(getString(R.string.debug), getString(R.string.warning));
         startActivity(intent);
     }
 
