@@ -122,6 +122,20 @@
     <string name="radio_9_8">yellow</string>
     <string name="radio_9_9">unknown</string>
 
+    <!-- feature 20 array -->
+    <string-array name="feature20_array">
+        <item>black</item>
+        <item>brown</item>
+        <item>buff</item>
+        <item>chocolate</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>purple</item>
+        <item>white</item>
+        <item>yellow</item>
+        <item>unknown</item>
+    </string-array>
+
     <!--
     <string name="prompt"></string>
     <string name="radio__"></string>
