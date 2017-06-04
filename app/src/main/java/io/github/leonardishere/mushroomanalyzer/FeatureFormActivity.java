@@ -4,19 +4,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 
-public class FeatureFormActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class FeatureFormActivity extends AppCompatActivity{// implements AdapterView.OnItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feature_form);
 
+        /*
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.feature20_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -24,8 +22,9 @@ public class FeatureFormActivity extends AppCompatActivity implements AdapterVie
         spinner.setAdapter(adapter);
 
         spinner.setOnItemSelectedListener(this);
+        */
     }
-
+    /*
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
@@ -35,12 +34,12 @@ public class FeatureFormActivity extends AppCompatActivity implements AdapterVie
         Intent intent = new Intent(this, DebugActivity.class);
         intent.putExtra(getString(R.string.debug), str);
         startActivity(intent);
-        */
+
     }
 
     public void onNothingSelected(AdapterView<?> parent) {
     }
-
+    */
     public void help(View view){
         Intent intent = new Intent(this, DebugActivity.class);
         intent.putExtra(getString(R.string.debug), "help isn't coming");
