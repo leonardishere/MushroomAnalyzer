@@ -70,11 +70,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radio_0_8"
                 />
+            <!--
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_0_9"
                 />
+            -->
         </RadioGroup>
         <Button
             android:layout_width="wrap_content"
@@ -110,11 +112,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radio_1_2"
                 />
+            <!--
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_1_3"
                 />
+            -->
         </RadioGroup>
         <Button
             android:layout_width="wrap_content"
@@ -123,46 +127,11 @@
             android:onClick="help"
             />
 
-        <!-- feature 8 -->
+        <!-- feature 12 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/prompt2"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup2"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_2_0"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_2_1"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_2_2"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-
-        <!-- feature 9 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt3"
+            android:text="@string/prompt4"
             />
         <RadioGroup
             android:layout_width="match_parent"
@@ -190,51 +159,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radio_3_3"
                 />
+            <!--
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_3_4"
                 />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_5"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_6"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_7"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_8"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_9"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_10"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_11"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_3_12"
-                />
+            -->
         </RadioGroup>
         <Button
             android:layout_width="wrap_content"
@@ -243,17 +174,17 @@
             android:onClick="help"
             />
 
-        <!-- feature 12 -->
+        <!-- feature 20 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/prompt4"
+            android:text="@string/prompt9"
             />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup4"
+            android:id="@+id/radioGroup9"
             >
             <RadioButton
                 android:layout_width="match_parent"
@@ -280,6 +211,33 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radio_4_4"
                 />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_4_5"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_4_6"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_4_7"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_4_8"
+                />
+            <!--
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_4_9"
+                />
+            -->
         </RadioGroup>
         <Button
             android:layout_width="wrap_content"
@@ -288,43 +246,55 @@
             android:onClick="help"
             />
 
-        <!-- feature 13 -->
+        <!-- feature 21 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/prompt5"
+            android:text="@string/prompt10"
             />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup5"
+            android:id="@+id/radioGroup10"
             >
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_5_0"
+                android:text="@string/radio_10_0"
                 />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_5_1"
+                android:text="@string/radio_10_1"
                 />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_5_2"
+                android:text="@string/radio_10_2"
                 />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_5_3"
+                android:text="@string/radio_10_3"
                 />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_5_4"
+                android:text="@string/radio_10_4"
                 />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_10_5"
+                />
+            <!--
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_10_6"
+                />
+            -->
         </RadioGroup>
         <Button
             android:layout_width="wrap_content"
@@ -332,262 +302,6 @@
             android:text="@string/help"
             android:onClick="help"
             />
-
-        <!-- feature 14 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt6"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup6"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_0"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_1"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_2"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_3"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_4"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_5"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_6"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_7"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_8"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_6_9"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-
-        <!-- feature 15 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt7"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup7"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_0"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_1"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_2"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_3"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_4"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_5"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_6"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_7"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_8"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_7_9"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-
-        <!-- feature 17 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt8"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup8"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_8_0"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_8_1"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_8_2"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_8_3"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_8_4"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-
-        <!-- feature 20 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt9"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/radioGroup9"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_0"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_1"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_2"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_3"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_4"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_5"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_6"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_7"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_8"
-                />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_9_9"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-
         <!--
         <Spinner
             android:id="@+id/spinner"

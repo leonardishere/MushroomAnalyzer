@@ -14,6 +14,7 @@
     <string name="help">Help!</string>
     <string name="debug">debug</string>
     <string name="next">next</string>
+    <string name="features">features</string>
     <!--<string name=""></string>-->
 
     <!-- feature form stuff -->
@@ -37,105 +38,36 @@
     <string name="radio_1_2">distant</string>
     <string name="radio_1_3">unknown</string>
 
-    <!-- feature 8 -->
-    <string name="prompt2">How large are the gills?</string>
-    <string name="radio_2_0">broad</string>
-    <string name="radio_2_1">narrow</string>
-    <string name="radio_2_2">unknown</string>
+    <!-- feature 12 -->
+    <string name="prompt2">Now look at the stalk of the mushroom.\nWhat is the surface like above the ring?</string>
+    <string name="radio_2_0">ibrous</string>
+    <string name="radio_2_1">scaly</string>
+    <string name="radio_2_2">silky</string>
+    <string name="radio_2_3">smooth</string>
+    <string name="radio_2_4">unknown</string>
 
-    <!-- feature 9 -->
-    <string name="prompt3">What color are the gills?</string>
+    <!-- feature 20 -->
+    <string name="prompt3">Now look at the spore print.\nWhat color is it?</string>
     <string name="radio_3_0">black</string>
     <string name="radio_3_1">brown</string>
     <string name="radio_3_2">buff</string>
     <string name="radio_3_3">chocolate</string>
-    <string name="radio_3_4">gray</string>
-    <string name="radio_3_5">green</string>
-    <string name="radio_3_6">orange</string>
-    <string name="radio_3_7">pink</string>
-    <string name="radio_3_8">purple</string>
-    <string name="radio_3_9">red</string>
-    <string name="radio_3_10">white</string>
-    <string name="radio_3_11">yellow</string>
-    <string name="radio_3_12">unknown</string>
+    <string name="radio_3_4">green</string>
+    <string name="radio_3_5">orange</string>
+    <string name="radio_3_6">purple</string>
+    <string name="radio_3_7">white</string>
+    <string name="radio_3_8">yellow</string>
+    <string name="radio_3_9">unknown</string>
 
-    <!-- feature 12 -->
-    <string name="prompt4">Now look at the stalk of the mushroom.\nWhat is the surface like above the ring?</string>
-    <string name="radio_4_0">ibrous</string>
-    <string name="radio_4_1">scaly</string>
-    <string name="radio_4_2">silky</string>
-    <string name="radio_4_3">smooth</string>
-    <string name="radio_4_4">unknown</string>
-
-    <!-- feature 13 -->
-    <string name="prompt5">What is the surface like below the ring?</string>
-    <string name="radio_5_0">ibrous</string>
-    <string name="radio_5_1">scaly</string>
-    <string name="radio_5_2">silky</string>
-    <string name="radio_5_3">smooth</string>
-    <string name="radio_5_4">unknown</string>
-
-    <!-- feature 14 -->
-    <string name="prompt6">What is the color above the ring?</string>
-    <string name="radio_6_0">brown</string>
-    <string name="radio_6_1">buff</string>
-    <string name="radio_6_2">cinnamon</string>
-    <string name="radio_6_3">gray</string>
-    <string name="radio_6_4">orange</string>
-    <string name="radio_6_5">pink</string>
-    <string name="radio_6_6">red</string>
-    <string name="radio_6_7">white</string>
-    <string name="radio_6_8">yellow</string>
-    <string name="radio_6_9">unknown</string>
-
-    <!-- feature 15 -->
-    <string name="prompt7">What is the color below the ring?</string>
-    <string name="radio_7_0">brown</string>
-    <string name="radio_7_1">buff</string>
-    <string name="radio_7_2">cinnamon</string>
-    <string name="radio_7_3">gray</string>
-    <string name="radio_7_4">orange</string>
-    <string name="radio_7_5">pink</string>
-    <string name="radio_7_6">red</string>
-    <string name="radio_7_7">white</string>
-    <string name="radio_7_8">yellow</string>
-    <string name="radio_7_9">unknown</string>
-
-    <!-- feature 17 -->
-    <string name="prompt8">Now look at the veil.\nWhat color is it?</string>
-    <string name="radio_8_0">brown</string>
-    <string name="radio_8_1">orange</string>
-    <string name="radio_8_2">white</string>
-    <string name="radio_8_3">yellow</string>
-    <string name="radio_8_4">unknown</string>
-
-    <!-- feature 20 -->
-    <string name="prompt9">Now look at the spore print.\nWhat color is it?</string>
-    <string name="radio_9_0">black</string>
-    <string name="radio_9_1">brown</string>
-    <string name="radio_9_2">buff</string>
-    <string name="radio_9_3">chocolate</string>
-    <string name="radio_9_4">green</string>
-    <string name="radio_9_5">orange</string>
-    <string name="radio_9_6">purple</string>
-    <string name="radio_9_7">white</string>
-    <string name="radio_9_8">yellow</string>
-    <string name="radio_9_9">unknown</string>
-
-    <!-- feature 20 array -->
-    <string-array name="feature20_array">
-        <item>black</item>
-        <item>brown</item>
-        <item>buff</item>
-        <item>chocolate</item>
-        <item>green</item>
-        <item>orange</item>
-        <item>purple</item>
-        <item>white</item>
-        <item>yellow</item>
-        <item>unknown</item>
-    </string-array>
-
+    <!-- feature 21 -->
+    <string name="prompt4">What population do the mushrooms come in?</string>
+    <string name="radio_4_0">abundant</string>
+    <string name="radio_4_1">clustered</string>
+    <string name="radio_4_2">numerous</string>
+    <string name="radio_4_3">scattered</string>
+    <string name="radio_4_4">several</string>
+    <string name="radio_4_5">solitary</string>
+    <string name="radio_4_6">unknown</string>
     <!--
     <string name="prompt"></string>
     <string name="radio__"></string>
