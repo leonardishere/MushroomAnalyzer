@@ -28,10 +28,10 @@ public class ResultsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] features = intent.getStringArrayExtra(getString(R.string.features));
         TextView view = (TextView) findViewById(R.id.resultText);
-        view.setText("blah");
+        //view.setText("blah");
 
         double prediction = predict(features);
-        view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
+        view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
 
         /*
         String[] newFeatures = featuresStringToChar(features);
@@ -174,10 +174,7 @@ public class ResultsActivity extends AppCompatActivity {
     }
 
     public double predict(String[] features) {
-
         //file in
-        //String filepath2 = "res/classifier.ser";
-
         Logistic lg2 = null;
         try{
             //FileInputStream filein = new FileInputStream(filepath);
@@ -320,4 +317,6 @@ public class ResultsActivity extends AppCompatActivity {
             return -3;
         }
     }
+
+    //public int getSimilar(String[] features){}
 }

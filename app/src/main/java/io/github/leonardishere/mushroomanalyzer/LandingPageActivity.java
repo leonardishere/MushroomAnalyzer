@@ -22,13 +22,14 @@ public class LandingPageActivity extends AppCompatActivity {
     }
 
     public void button2(View view){
-        /*
+
         Intent intent = new Intent(this, DebugActivity.class);
         intent.putExtra(getString(R.string.debug), "button2 was clicked");
         startActivity(intent);
-        */
+        /*
         Intent intent = new Intent(this, UITestActivity.class);
         startActivity(intent);
+        */
     }
 
     public void button3(View view){

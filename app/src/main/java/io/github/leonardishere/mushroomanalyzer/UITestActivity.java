@@ -16,6 +16,7 @@ public class UITestActivity extends AppCompatActivity implements AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uitest);
 
+        /*
         Spinner spinner = (Spinner) findViewById(R.id.spinner2);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.feature20_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -30,7 +31,7 @@ public class UITestActivity extends AppCompatActivity implements AdapterView.OnI
         ExpandableListView listView2 = (ExpandableListView) findViewById(R.id.listView2);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.feature20_array, android.R.layout.simple_expandable_list_item_1);
         //listView2.setAdapter(adapter2);
-
+        */
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {}
