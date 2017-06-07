@@ -31,7 +31,8 @@ public class ResultsActivity extends AppCompatActivity {
         //view.setText("blah");
 
         double prediction = predict(features);
-        view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
+        //view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
+        view.setText(String.format(Locale.getDefault(), "The mushroom you selected is %s.", prediction == 0 ? "edible" : "poisonous" ));
 
         /*
         String[] newFeatures = featuresStringToChar(features);
