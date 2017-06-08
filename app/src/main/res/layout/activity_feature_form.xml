@@ -92,12 +92,14 @@
                 />
             -->
         </RadioGroup>
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
             android:onClick="help"
             />
+            -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
@@ -139,12 +141,14 @@
                 />
             -->
         </RadioGroup>
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
             android:onClick="help"
             />
+            -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
@@ -192,12 +196,14 @@
                 />
             -->
         </RadioGroup>
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
             android:onClick="help"
             />
+            -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
@@ -263,12 +269,14 @@
                 />
             -->
         </RadioGroup>
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
             android:onClick="help"
             />
+            -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
@@ -328,12 +336,14 @@
                 />
             -->
         </RadioGroup>
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
             android:onClick="help"
             />
+            -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />

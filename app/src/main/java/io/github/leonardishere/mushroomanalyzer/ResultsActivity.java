@@ -6,10 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
+import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Scanner;
 
 import weka.classifiers.functions.Logistic;
 import weka.core.Attribute;
@@ -27,12 +31,18 @@ public class ResultsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String[] features = intent.getStringArrayExtra(getString(R.string.features));
-        TextView view = (TextView) findViewById(R.id.resultText);
+        TextView view1 = (TextView) findViewById(R.id.resultText1);
+        TextView view2 = (TextView) findViewById(R.id.resultText2);
+        TextView view3 = (TextView) findViewById(R.id.resultText3);
         //view.setText("blah");
 
         double prediction = predict(features);
         //view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
-        view.setText(String.format(Locale.getDefault(), "The mushroom you selected is %s.", prediction == 0 ? "edible" : "poisonous" ));
+        String similar = getSimilar(features);
+        //view1.setText(String.format(Locale.getDefault(), "The mushroom you selected is %s.\n%s", prediction == 0 ? "edible" : "poisonous", similar));
+        view1.setText("The mushroom you selected is");
+        view2.setText(prediction == 0 ? "edible" : "poisonous");
+        view3.setText(similar);
 
         /*
         String[] newFeatures = featuresStringToChar(features);
@@ -319,5 +329,34 @@ public class ResultsActivity extends AppCompatActivity {
         }
     }
 
-    //public int getSimilar(String[] features){}
+    public String getSimilar(String[] features){
+        String[] charFeatures = featuresStringToChar(features);
+        String featureString = String.format(Locale.getDefault(), "%s%s%s%s%s", charFeatures[0], charFeatures[1], charFeatures[2], charFeatures[3], charFeatures[4]);
+
+        ArrayList<String> arr1 = new ArrayList<>();
+        ArrayList<String> arr2 = new ArrayList<>();
+        ArrayList<Integer> arr3 = new ArrayList<>();
+        try{
+            Resources resources = getResources();
+            InputStream filein = resources.openRawResource(R.raw.mushrooms2);
+            Scanner scan = new Scanner(filein);
+            while(scan.hasNext()){
+                arr1.add(scan.next());
+                arr2.add(scan.next());
+                arr3.add(scan.nextInt());
+            }
+
+            filein.close();
+        }catch(IOException ioex){
+            return "ioexception";
+        }
+
+        for(int i = 0; i < arr1.size(); ++i){
+            if(featureString.equals(arr1.get(i))){
+                return String.format(Locale.getDefault(), "%d similar %s mushrooms were found.", arr3.get(i), arr2.get(i).equals("e") ? "edible" : "poisonous");
+            }
+        }
+        //return String.format("no similar mushrooms were found");//, featureString);
+        return "";
+    }
 }

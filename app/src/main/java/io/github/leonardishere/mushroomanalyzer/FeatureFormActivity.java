@@ -18,12 +18,13 @@ public class FeatureFormActivity extends AppCompatActivity{
         //button.setEnabled(false);
     }
 
+    /*
     public void help(View view){
         Intent intent = new Intent(this, DebugActivity.class);
         intent.putExtra(getString(R.string.debug), "help isn't coming");
         startActivity(intent);
     }
-
+    */
     public void onRadioButtonClicked(View view){
         RadioGroup[] groups = new RadioGroup[]{
                 (RadioGroup) findViewById(R.id.radioGroup0),
