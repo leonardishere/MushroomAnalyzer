@@ -31,25 +31,25 @@ public class ResultsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String[] features = intent.getStringArrayExtra(getString(R.string.features));
-        TextView view1 = (TextView) findViewById(R.id.resultText1);
         TextView view2 = (TextView) findViewById(R.id.resultText2);
         TextView view3 = (TextView) findViewById(R.id.resultText3);
-        //view.setText("blah");
 
         double prediction = predict(features);
-        //view.setText(String.format(Locale.getDefault(), "%s\n%s\n%s\n%s\n%s\n\n%s", features[0], features[1], features[2], features[3], features[4], prediction == 0 ? "edible" : "poisonous"));
         String similar = getSimilar(features);
-        //view1.setText(String.format(Locale.getDefault(), "The mushroom you selected is %s.\n%s", prediction == 0 ? "edible" : "poisonous", similar));
-        view1.setText("The mushroom you selected is");
-        view2.setText(prediction == 0 ? "edible" : "poisonous");
-        view3.setText(similar);
+        String status;
+        if(prediction == 0) status = "edible";
+        else if(prediction == 1) status = "poisonous";
+        else status = "unknown";
 
-        /*
-        String[] newFeatures = featuresStringToChar(features);
-        view.setText(String.format("%s\n%s\n%s\n%s\n%s\n%f", newFeatures[0], newFeatures[1], newFeatures[2], newFeatures[3], newFeatures[4], prediction));
-        */
+        view2.setText(status);
+        view3.setText(similar);
     }
 
+    /**
+     * Maps the string array of features to their representative chars.
+     * @param features the array of features
+     * @return the representative chars
+     */
     public String[] featuresStringToChar(String[] features){
         String[] newFeatures = new String[5];
         switch(features[0]){
@@ -184,14 +184,16 @@ public class ResultsActivity extends AppCompatActivity {
         return newFeatures;
     }
 
+    /**
+     * Predicts the edibility of the mushroom.
+     * 0 is edible, 1 is poisonous, and other values are errors.
+     * @param features the features of the mushroom
+     * @return edibility
+     */
     public double predict(String[] features) {
-        //file in
         Logistic lg2 = null;
+        //deserializes a pre-trained Logistic object from file
         try{
-            //FileInputStream filein = new FileInputStream(filepath);
-            //FileInputStream filein = new FileInputStream(filepath2);
-            //FileInputStream filein = openFileInput(filepath2);
-            //Resources.openRawResource(R.raw.classifier);
             Resources resources = getResources();
             InputStream filein = resources.openRawResource(R.raw.classifier);
 
@@ -201,21 +203,8 @@ public class ResultsActivity extends AppCompatActivity {
             in.close();
             filein.close();
         }catch(IOException ioex){
-            /*
-            ioex.printStackTrace();
-            text = String.format("%s\n%s", text, ioex);
-            //return;
-            */
             return -1;
-        }
-
-        catch(ClassNotFoundException cnfex){
-            /*
-            // System.out.println("Logistic class not found");
-            cnfex.printStackTrace();
-            text = String.format("%s\n%s", text, cnfex);
-            //return;
-            */
+        }catch(ClassNotFoundException cnfex){
             return -2;
         }
 
@@ -295,11 +284,6 @@ public class ResultsActivity extends AppCompatActivity {
             //Create the new instance i1 to test
             String[] newFeatures = featuresStringToChar(features);
             Instance i1 = new DenseInstance(6);
-            //i1.setValue(odor, "p");
-            //i1.setValue(gillspacing, "c");
-            //i1.setValue(stalksurfacearing, "s");
-            //i1.setValue(sporeprintcolor, "k");
-            //i1.setValue(population, "s");
             i1.setValue(odor, newFeatures[0]);
             i1.setValue(gillspacing, newFeatures[1]);
             i1.setValue(stalksurfacearing, newFeatures[2]);
@@ -329,10 +313,16 @@ public class ResultsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Finds any similar mushrooms in the database.
+     * @param features the features of a given mushroom
+     * @return a formatted string with data about similar mushrooms
+     */
     public String getSimilar(String[] features){
         String[] charFeatures = featuresStringToChar(features);
         String featureString = String.format(Locale.getDefault(), "%s%s%s%s%s", charFeatures[0], charFeatures[1], charFeatures[2], charFeatures[3], charFeatures[4]);
 
+        //reads in the text file
         ArrayList<String> arr1 = new ArrayList<>();
         ArrayList<String> arr2 = new ArrayList<>();
         ArrayList<Integer> arr3 = new ArrayList<>();
@@ -353,10 +343,10 @@ public class ResultsActivity extends AppCompatActivity {
 
         for(int i = 0; i < arr1.size(); ++i){
             if(featureString.equals(arr1.get(i))){
-                return String.format(Locale.getDefault(), "%d similar %s mushrooms were found.", arr3.get(i), arr2.get(i).equals("e") ? "edible" : "poisonous");
+                return String.format(Locale.getDefault(), "%d similar %s mushrooms were found", arr3.get(i), arr2.get(i).equals("e") ? "edible" : "poisonous");
             }
         }
-        //return String.format("no similar mushrooms were found");//, featureString);
+        //return "no similar mushrooms were found";
         return "";
     }
 }

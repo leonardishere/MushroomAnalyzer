@@ -14,17 +14,12 @@ public class FeatureFormActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feature_form);
-        Button button = (Button) findViewById(R.id.nextButton);
-        //button.setEnabled(false);
     }
 
-    /*
-    public void help(View view){
-        Intent intent = new Intent(this, DebugActivity.class);
-        intent.putExtra(getString(R.string.debug), "help isn't coming");
-        startActivity(intent);
-    }
-    */
+    /**
+     * Enables or disables the next button if all radio groups have a selection.
+     * @param view the radiobutton that was clicked
+     */
     public void onRadioButtonClicked(View view){
         RadioGroup[] groups = new RadioGroup[]{
                 (RadioGroup) findViewById(R.id.radioGroup0),
@@ -44,6 +39,10 @@ public class FeatureFormActivity extends AppCompatActivity{
         button.setEnabled(allSelected);
     }
 
+    /**
+     * Gets the values from the form and sends them to a new ResultsActivity.
+     * @param view the next button
+     */
     public void next(View view){
         String[] featureNames = new String[]{
             "odor",
@@ -60,6 +59,7 @@ public class FeatureFormActivity extends AppCompatActivity{
                 (RadioGroup) findViewById(R.id.radioGroup3),
                 (RadioGroup) findViewById(R.id.radioGroup4)
         };
+        //iterate over every radio group
         for(int i = 0; i < features.length; ++i){
             int id = groups[i].getCheckedRadioButtonId();
             if(id == -1){

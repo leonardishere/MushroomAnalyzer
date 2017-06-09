@@ -28,7 +28,6 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:id="@+id/radioGroup0"
             >
             <RadioButton
@@ -355,30 +354,8 @@
             android:onClick="next"
             android:enabled="false"
             android:id="@+id/nextButton"
+            android:textSize="20sp"
             />
-        <!--
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/prompt"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio__"
-                />
-        </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            android:onClick="help"
-            />
-        -->
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
