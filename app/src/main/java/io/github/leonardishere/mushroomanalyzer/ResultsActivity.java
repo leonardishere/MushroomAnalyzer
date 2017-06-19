@@ -101,7 +101,7 @@ public class ResultsActivity extends AppCompatActivity {
         }
 
         switch(features[2]){
-            case "ibrous":
+            case "fibrous":
                 newFeatures[2] = "f";
                 break;
             case "scaly":
@@ -174,13 +174,6 @@ public class ResultsActivity extends AppCompatActivity {
                 newFeatures[4] = "?";
                 break;
         }
-
-        /*
-        Intent intent = new Intent(this, DebugActivity.class);
-        String str = String.format("%s\n%s\n%s\n%s\n%s\n%s", "features to char returned:", newFeatures[0], newFeatures[1], newFeatures[2], newFeatures[3], newFeatures[4]);
-        intent.putExtra(getString(R.string.features), str);
-        startActivity(intent);
-        */
         return newFeatures;
     }
 

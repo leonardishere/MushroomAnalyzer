@@ -10,13 +10,15 @@
     <string name="nothing">Nothing to see here. Yet.</string>
     <string name="empty"></string>
     <string name="contentDescription1">A picture of a mushroom.</string>
-    <string name="about">Have you ever found yourself hungry in the wilderness without the expertise of a survival expert?  Well now you have one in your pocket! Simply plug in the features of the mushroom you wish to examine as prompted, and Mushroom Analyzer will use its machine learning classification system to identify the mushroom as edible or poisonous. Using our application, one can identify mushrooms with reliable accuracy and reduce the amount of time that would otherwise go towards biological testing. The mushrooms in the data set are from the Lepiota and Agaricus genera and thus this application should not be used with other mushrooms.\n\nThis application represents the combined efforts of four students at Santa Clara University attempting to test and utilize different open-source libraries.  The application employs WEKA, a java-based toolkit implemented specifically to expedite several analysis processes.</string>
+    <string name="about">Have you ever found yourself hungry in the wilderness without the expertise of a survival expert?  Well now you have one in your pocket! Simply plug in the features of the mushroom you wish to examine as prompted, and Mushroom Analyzer will use its machine learning classification system to identify the mushroom as edible or poisonous. Using our application, one can identify mushrooms with reliable accuracy and reduce the amount of time that would otherwise go towards biological testing. The mushrooms in the data set are from the Lepiota and Agaricus genera and thus this application should not be used with other mushrooms.\n\nThe report and presentation for the data analysis, the source code for the classifier and application, and other information is available at https://github.com/leonardishere/MushroomAnalyzer</string>
     <string name="warning">Caution!\n\nNever eat mushrooms that have been identified with this app.\n\nThe consumption of mushrooms always happens at your own risk.\n\nThe app can not replace the advice of an experienced professional. It provides only basic knowledge to simplify the mushroom identification. The data is based on the actual state of knowledge and professional experience. However we can not give any guarantee for the correctness of the edibility-values.\n\nContinue if you agree with these conditions.\n</string>
     <string name="help">Help!</string>
     <string name="debug">debug</string>
     <string name="next">next</string>
     <string name="features">features</string>
     <string name="resultsActivityHeader">The mushroom you entered is</string>
+    <string name="dontShow">Don\'t show this message again</string>
+    <string name="showKey">preference key to save show/dont show dialog</string>
 
     <!-- feature form stuff -->
     <!-- feature 5 -->
@@ -41,7 +43,7 @@
 
     <!-- feature 12 -->
     <string name="prompt2">Now look at the stalk of the mushroom.\nWhat is the surface like above the ring?</string>
-    <string name="radio_2_0">ibrous</string>
+    <string name="radio_2_0">fibrous</string>
     <string name="radio_2_1">scaly</string>
     <string name="radio_2_2">silky</string>
     <string name="radio_2_3">smooth</string>
@@ -69,8 +71,4 @@
     <string name="radio_4_4">several</string>
     <string name="radio_4_5">solitary</string>
     <string name="radio_4_6">unknown</string>
-    <!--
-    <string name="prompt"></string>
-    <string name="radio__"></string>
-    -->
 </resources>

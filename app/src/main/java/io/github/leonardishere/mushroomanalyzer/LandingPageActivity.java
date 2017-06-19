@@ -2,11 +2,15 @@ package io.github.leonardishere.mushroomanalyzer;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
 public class LandingPageActivity extends AppCompatActivity {
@@ -19,29 +23,43 @@ public class LandingPageActivity extends AppCompatActivity {
         image = 0;
         final Activity self = this;
 
-        // 1. Instantiate an AlertDialog.Builder with its constructor
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //gets preferences
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        boolean show = sharedPref.getBoolean(getString(R.string.showKey), true);
 
-        // 2. Chain together various setter methods to set the dialog characteristics
-        builder.setMessage(R.string.warning)
-                .setTitle("Warning!");
+        //optionally shows
+        if(show) {
+            //create dialog and show
+            View checkBoxView = View.inflate(this, R.layout.checkbox, null);
+            final CheckBox checkBox = (CheckBox) checkBoxView.findViewById(R.id.checkbox);
 
-        builder.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // User clicked OK button
-            }
-        });
-        builder.setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // User cancelled the dialog
-                self.finish();
-                System.exit(0);
-            }
-        });
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setView(checkBoxView);
+            builder.setMessage(R.string.warning)
+                    .setTitle("Warning!");
 
-        // 3. Get the AlertDialog from create()
-        AlertDialog dialog = builder.create();
-        dialog.show();
+            builder.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User clicked OK button
+                    if (checkBox.isChecked()) {
+                        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPref.edit();
+                        editor.putBoolean(getString(R.string.showKey), false);
+                        editor.apply();
+                    }
+                }
+            });
+            builder.setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User cancelled the dialog
+                    self.finish();
+                    System.exit(0);
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
     }
 
     public void button1(View view){
@@ -49,27 +67,14 @@ public class LandingPageActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void button2(View view){
-
-        Intent intent = new Intent(this, DebugActivity.class);
-        intent.putExtra(getString(R.string.debug), "button2 was clicked");
-        startActivity(intent);
-        /*
-        Intent intent = new Intent(this, UITestActivity.class);
-        startActivity(intent);
-        */
-    }
-
     public void button3(View view){
         Intent intent = new Intent(this, DebugActivity.class);
-        //intent.putExtra(getString(R.string.debug), "button3 was clicked");
         intent.putExtra(getString(R.string.debug), getString(R.string.about));
         startActivity(intent);
     }
 
     public void button4(View view){
         Intent intent = new Intent(this, DebugActivity.class);
-        //intent.putExtra("debug_text", "button4 was clicked");
         intent.putExtra(getString(R.string.debug), getString(R.string.warning));
         startActivity(intent);
     }
