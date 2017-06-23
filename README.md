@@ -8,7 +8,7 @@ The presentation and report for this project are in the Documents folder. You ca
 
 ## Downloads
 
-The app is available for download at [*https://play.google.com/store/apps/details?id=io.github.leonardishere.mushroomanalyzer*](https://play.google.com/store/apps/details?id=io.github.leonardishere.mushroomanalyzer).
+The app is available for download at https://play.google.com/store/apps/details?id=io.github.leonardishere.mushroomanalyzer.
 
 Additionally, you can download this repository and open it with Android Studio.
 
